@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кольори</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #colorPalette {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .color {
+            width: 30px;
+            height: 30px;
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        #canvas {
+            display: grid;
+            grid-template-columns: repeat(10, 30px);
+            gap: 2px;
+        }
+
+        .pixel {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<div id="colorPalette">
+    <div class="color" style="background-color: #ff0000" onclick="selectColor('#ff0000')"></div>
+    <div class="color" style="background-color: #00ff00" onclick="selectColor('#00ff00')"></div>
+    <div class="color" style="background-color: #0000ff" onclick="selectColor('#0000ff')"></div>
+    <div class="color" style="background-color: #ffff00" onclick="selectColor('#ffff00')"></div>
+</div>
+
+<div id="canvas"></div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

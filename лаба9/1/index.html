@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .gallery {
+            display: flex;
+        }
+
+        .image {
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            cursor: pointer;
+            filter: grayscale(100%) opacity(0.5);
+            transition: filter 0.3s, opacity 0.3s;
+        }
+
+        .image.active {
+            filter: grayscale(0%) opacity(1);
+        }
+
+    </style>
+</head>
+<body>
+<div class="gallery">
+    <img src="../1.jpg" class="image" onclick="toggleImage(this)">
+    <img src="../2.jpg" class="image" onclick="toggleImage(this)">
+    <img src="../3.jpg" class="image" onclick="toggleImage(this)">
+    <img src="../4.jpg" class="image" onclick="toggleImage(this)">
+    <img src="../2.jpg" class="image" onclick="toggleImage(this)">
+    <img src="../1.jpg" class="image" onclick="toggleImage(this)">
+
+    <!-- Додайте інші зображення за потреби -->
+</div>
+<script src="index.js"></script>
+</body>
+</html>

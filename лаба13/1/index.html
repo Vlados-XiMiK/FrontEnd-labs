@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Відображення зображень з JSON</title>
+    <style>
+        #imageContainer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .thumbnail {
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        .thumbnail img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #jsonInput {
+            margin-bottom: 10px;
+        }
+
+        #errorMessage {
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>Відображення зображень з JSON</h1>
+
+<label for="jsonInput">Введіть JSON:</label>
+<input type="text" id="jsonInput" placeholder='["file1.jpg","file2.jpg","file3.jpg"]'>
+<button onclick="displayImages()">Показати зображення</button>
+<div id="errorMessage"></div>
+<div id="imageContainer"></div>
+
+<script src="index.js"></script>
+</body>
+</html>

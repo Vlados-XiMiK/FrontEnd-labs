@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вибір електронних адрес</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #selectedEmails {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<label>
+    <input type="checkbox" class="emailCheckbox" value="world@example.com"> world@example.com
+</label>
+
+<label>
+    <input type="checkbox" class="emailCheckbox" value="river@example.com"> river@example.com
+</label>
+
+<label>
+    <input type="checkbox" class="emailCheckbox" value="country@example.com"> country@example.com
+</label>
+
+<label>
+    <input type="checkbox" class="emailCheckbox" value="amount@example.com"> amount@example.com
+</label>
+
+<div id="selectedEmails"></div>
+
+<script src="index.js"></script>
+</body>
+</html>

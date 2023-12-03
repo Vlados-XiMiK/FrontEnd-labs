@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Дата</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            max-width: 700px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+
+
+
+
+
+<table>
+    <thead>
+    <tr>
+        <th>Завдання</th>
+        <th>Кнопка</th>
+        <th>Результат</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Завдання 1. Виведення поточної дати та часу</td>
+        <td><button onclick="displayCurrentDate()">Виконати</button></td>
+        <td id="currentDateCell"></td>
+    </tr>
+    </tbody>
+</table>
+<script src="index.js"></script>
+</body>
+</html>

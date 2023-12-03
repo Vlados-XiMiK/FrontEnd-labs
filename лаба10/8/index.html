@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форум</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #messages {
+            list-style: none;
+            padding: 0;
+        }
+
+        .message {
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<h1>Форум</h1>
+
+<ul id="messages"></ul>
+
+<form id="messageForm">
+    <label for="username">Ім'я користувача:</label>
+    <input type="text" id="username" required>
+
+    <label for="message">Повідомлення:</label>
+    <textarea id="message" required></textarea>
+
+    <button type="submit">Надіслати повідомлення</button>
+</form>
+
+<script src="index.js"></script>
+</body>
+</html>

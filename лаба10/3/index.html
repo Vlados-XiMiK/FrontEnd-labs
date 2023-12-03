@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кольори</title>
+    <style>
+        .color-palette {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .color {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+
+        #rectangle {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #000;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #ffffff, #ffffff);
+        }
+    </style>
+</head>
+<body>
+
+<div class="color-palette">
+    <div class="color" style="background-color: #ff0000" onclick="toggleColor('#ff0000')"></div>
+    <div class="color" style="background-color: #00ff00" onclick="toggleColor('#00ff00')"></div>
+    <div class="color" style="background-color: #0000ff" onclick="toggleColor('#0000ff')"></div>
+    <div class="color" style="background-color: #ffff00" onclick="toggleColor('#ffff00')"></div>
+</div>
+
+<div id="rectangle" onclick="applyColors()"></div>
+
+<script src="index.js"></script>
+
+</body>
+</html>

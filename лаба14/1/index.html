@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Студенти</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .table-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .average-message {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="listTable" class="table-container"></div>
+<div id="styledTable" class="table-container"></div>
+
+<div id="listAverage" class="average-message"></div>
+<div id="styledAverage" class="average-message"></div>
+
+<script src="index.js"></script>
+</body>
+</html>

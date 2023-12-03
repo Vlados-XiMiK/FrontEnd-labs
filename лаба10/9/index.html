@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список книг</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .selected {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<h1>Список книг</h1>
+
+<ul onclick="changeColor(event)">
+    <li>«Володар кілець» Джон Р. Р. Толкін</li>
+    <li>«Гордість і упередження» Джейн Остін</li>
+    <li>«Темні початки» Філіп Пулман</li>
+    <li>«Автостопом по галактиці» Дуглас Адамс</li>
+    <li>«Гаррі Поттер і Кубок вогню» Джоан Роулінг</li>
+    <li>«Вбити пересмішника» Харпер Лі</li>
+</ul>
+
+<script src="index.js"></script>
+</body>
+</html>

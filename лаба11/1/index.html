@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Історія</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        textarea {
+            width: 80%;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        #history-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        #history-buttons button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<textarea id="text-area" oninput="saveText()"></textarea>
+<div id="history-buttons">
+    <button onclick="moveHistory(-1)">←</button>
+    <button onclick="moveHistory(1)">→</button>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

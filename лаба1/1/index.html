@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор бургерів</title>
+</head>
+<body>
+
+<h1>Калькулятор бургерів</h1>
+
+<form id="burgerForm">
+    <label for="walletMoney">Сума грошей у гаманці:</label>
+    <input type="number" id="walletMoney" required step="0.01">
+
+    <label for="burgerPrice">Ціна одного бургера:</label>
+    <input type="number" id="burgerPrice" required step="0.01">
+
+    <button type="button" onclick="calculateBurgers()">Розрахувати</button>
+</form>
+
+<div id="result"></div>
+
+<script src="burger-amount.js"></script>
+
+</body>
+</html>

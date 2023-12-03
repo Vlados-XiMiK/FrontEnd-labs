@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Дата</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        textarea, button, p {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+<textarea id="textInput" rows="4" cols="50" placeholder="Введіть текст з датами у форматі РРРР-ММ-ДД"></textarea>
+<button onclick="findAndDisplayDates()">Знайти дати</button>
+<p id="result"></p>
+<script src="index.js"></script>
+</body>
+</html>

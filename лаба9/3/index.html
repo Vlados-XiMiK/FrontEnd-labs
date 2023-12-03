@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Перевірка таблиці множення</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .resizable-rotatable-block {
+            flex-direction: column;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: move;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .controls {
+            margin-top: 150px;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+        }
+
+        .resizer {
+
+            width: 10px;
+            height: 10px;
+            background-color: dodgerblue;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            cursor: se-resize;
+        }
+    </style>
+</head>
+<body>
+<div class="resizable-rotatable-block">
+    <div class="resizer" id="resizer"></div>
+
+</div>
+
+<div class="controls">
+    <br>
+    <label for="width">Width:</label>
+    <input type="range" id="width" min="50" max="300">
+
+    <label for="height">Height:</label>
+    <input type="range" id="height" min="50" max="300">
+
+    <label for="rotate">Rotate:</label>
+    <input type="range" id="rotate" min="0" max="360">
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
